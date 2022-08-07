@@ -1,0 +1,34 @@
+<html>
+    <head>
+            <link rel="stylesheet"  href="sstyle.css"> 
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Sales'],
+          ['France',     4260],
+          ['Italy',      3970],
+          ['Japan',  4260],
+          ['Canada', 3970],
+        ]);
+
+        var options = {
+          title: 'Sales Distribution'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 350px; height: 280px;"></div>
+      <pre style="color:grey">             230,900 Sales</pre>
+  </body>
+    
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <style>
+            .button{
+                display: inline-flex;
+                height: :950px;
+                width=8px;
+                padding:0;
+                color:white;
+                background:blue;
+                border:none;
+                outline:none;
+                border-radius:8px;
+                overflow: hidden;
+                font:bold 12px sans;
+                cursor: pointer;
+            }
+            .button:hover{
+                background: darkblue;
+            }
+            .button:active{
+                background:darkblue 
+            }
+            .button__text,
+            .button__icon{
+                display: inline-flex;
+                align-items: center;
+                padding: 4px 7px;
+                height=95%;
+            }
+            .button__icon{
+                font-size: 1.25rem;
+                background:rgba(0, 0 ,0, 0.08);
+            }
+        </style>
+                <button type="button" class="button">
+            <span class="button__text">Add Funds</span>
+            <span class="button__icon"><ion-icon name="add-circle-outline"></ion-icon></span>
+        </button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        
+    </body>
+</html>
